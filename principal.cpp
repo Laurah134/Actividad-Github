@@ -14,3 +14,11 @@ double rnum(double n)
     std::cin>>n;
     return n;
 }
+double sum(double n1, double n2)
+{
+    return n1+n2;
+}
+double resta(double n1, double n2)
+{
+    return n1-n2;
+}
