@@ -1,18 +1,20 @@
 #include<iostream>
 #include<cmath>
 
-int menu(int o)
+int menu()
 {
-    std::cout<<"::::::MENU::::::"<<std::endl;
-    std::cout<<"\t1. Suma\n\t 2. Resta\n\t 3. División\n\t 4. Multiplicación\n\t 5. Modulo\n\t"<<std::endl;
+    int o;
+    std::cout<<":::::::::::::MENU:::::::::::::"<<std::endl;
+    std::cout<<"\t1. Suma\n\t2. Resta\n\t3. División\n\t4. Multiplicación\n\t"<<std::endl;
     std::cin>>o;
     return o;
 }
-double rnum(double n)
+double rnum()
 {
+    double n;
     std::cout<<"Ingrese un número"<<std::endl;
     std::cin>>n;
-    return n;
+    return (n);
 }
 double sum(double n1, double n2)
 {
@@ -30,7 +32,30 @@ double proc(double n1, double n2)
 {
     return n1*n2;
 }
-double mod(double n1, double n2)
+int main ()
 {
-    return n1%n2;
+    double num1;
+    double num2;
+    num1=rnum();
+    num2=rnum();
+    switch (menu())
+    {
+    case 1:
+    std::cout<<"El resultado es:"<<sum(num1,num2)<<std::endl;
+        break;
+     case 2:
+    std::cout<<"El resultado es:"<<resta(num1,num2)<<std::endl;
+        break;
+     case 3:
+    std::cout<<"El resultado es:"<<div(num1,num2)<<std::endl;
+        break;
+     case 4:
+    std::cout<<"El resultado es:"<<proc(num1,num2)<<std::endl;
+        break;
+    default:
+    std::cout<<"Opción incorrecta"<<std::endl;
+        break;
+    }
+
+    return 0;
 }
