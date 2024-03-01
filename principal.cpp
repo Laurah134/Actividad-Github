@@ -22,3 +22,15 @@ double resta(double n1, double n2)
 {
     return n1-n2;
 }
+double div(double n1, double n2)
+{
+    return n1/n2;
+}
+double proc(double n1, double n2)
+{
+    return n1*n2;
+}
+double mod(double n1, double n2)
+{
+    return n1%n2;
+}
